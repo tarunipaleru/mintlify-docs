@@ -1,92 +1,203 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
-  },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+    "name": "Hathora",
+    "logo": "/logo.png",
+    "favicon": "/favicon.png",
+    "colors": {
+      "primary": "#02FE57",
+      "light": "#3FFF7F",
+      "dark": "#02FE57",
+      "background": {
+        "dark": "#0f0e1b"
+      }
     },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+    "topbarCtaButton": {
+      "name": "Login",
+      "url": "https://console.hathora.dev/login"
     },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+    "topbarLinks": [
+      {
+        "name": "About Us",
+        "url": "https://hathora.dev/about-us"
+      }
+    ],
+    "modeToggle": {
+      "default": "dark",
+      "isHidden": true
     },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    }
-  ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  },
-  "openapi": "https://hathora.dev/swagger.json"
-}
+    "anchors": [
+      {
+        "name": "Blog",
+        "icon": "newspaper",
+        "url": "https://blog.hathora.dev/"
+      },
+      {
+        "name": "Discord",
+        "icon": "discord",
+        "url": "https://discord.com/invite/hathora"
+      },
+      {
+        "name": "GitHub",
+        "icon": "github",
+        "url": "https://github.com/hathora"
+      }
+    ],
+    "navigation": [
+      {
+        "group": "AppV1",
+        "pages": [
+          "api-reference/appv1/get-appsv1list",
+          "api-reference/appv1/post-appsv1create",
+          "api-reference/appv1/post-appsv1update",
+          "api-reference/appv1/get-appsv1info",
+          "api-reference/appv1/delete-appsv1delete"
+        ]
+      },
+      {
+        "group": "AuthV1",
+        "pages": [
+          "api-reference/authv1/post-authv1-loginanonymous",
+          "api-reference/authv1/post-authv1-loginnickname",
+          "api-reference/authv1/post-authv1-logingoogle"
+        ]
+      },
+      {
+        "group": "BillingV1",
+        "pages": [
+          "api-reference/billingv1/get-billingv1balance",
+          "api-reference/billingv1/get-billingv1paymentmethod",
+          "api-reference/billingv1/post-billingv1customerportalurl",
+          "api-reference/billingv1/get-billingv1invoices"
+        ]
+      },
+      {
+        "group": "BuildV1",
+        "pages": [
+          "api-reference/buildv1/get-buildsv1-list",
+          "api-reference/buildv1/get-buildsv1-info",
+          "api-reference/buildv1/post-buildsv1-create",
+          "api-reference/buildv1/post-buildsv1-run",
+          "api-reference/buildv1/delete-buildsv1-delete"
+        ]
+      },
+      {
+        "group": "DeploymentV1",
+        "pages": [
+          "api-reference/deploymentv1/get-deploymentsv1-list",
+          "api-reference/deploymentv1/get-deploymentsv1-latest",
+          "api-reference/deploymentv1/get-deploymentsv1-info",
+          "api-reference/deploymentv1/post-deploymentsv1-create"
+        ]
+      },
+      {
+        "group": "DiscoveryV1",
+        "pages": [
+          "api-reference/discoveryv1/get-discoveryv1ping"
+        ]
+      },
+      {
+        "group": "LobbyV1",
+        "pages": [
+          "api-reference/lobbyv1/post-lobbyv1-createprivate",
+          "api-reference/lobbyv1/post-lobbyv1-createpublic",
+          "api-reference/lobbyv1/get-lobbyv1-list"
+        ]
+      },
+      {
+        "group": "LobbyV2",
+        "pages": [
+          "api-reference/lobbyv2/post-lobbyv2-createprivate",
+          "api-reference/lobbyv2/post-lobbyv2-createpublic",
+          "api-reference/lobbyv2/post-lobbyv2-createlocal",
+          "api-reference/lobbyv2/post-lobbyv2-create",
+          "api-reference/lobbyv2/get-lobbyv2-listpublic",
+          "api-reference/lobbyv2/get-lobbyv2-info",
+          "api-reference/lobbyv2/post-lobbyv2-setstate"
+        ]
+      },
+      {
+        "group": "LobbyV3",
+        "pages": [
+          "api-reference/lobbyv3/post-lobbyv3-create",
+          "api-reference/lobbyv3/get-lobbyv3-listpublic",
+          "api-reference/lobbyv3/get-lobbyv3-inforoomid",
+          "api-reference/lobbyv3/get-lobbyv3-infoshortcode"
+        ]
+      },
+      {
+        "group": "LogV1",
+        "pages": [
+          "api-reference/logv1/get-logsv1-all",
+          "api-reference/logv1/get-logsv1-process",
+          "api-reference/logv1/get-logsv1-process-download",
+          "api-reference/logv1/get-logsv1-deployment"
+        ]
+      },
+      {
+        "group": "ManagementV1",
+        "pages": [
+          "api-reference/managementv1/post-managementv1sendverificationemail"
+        ]
+      },
+      {
+        "group": "MetricsV1",
+        "pages": [
+          "api-reference/metricsv1/get-metricsv1-process"
+        ]
+      },
+      {
+        "group": "ProcessesV1",
+        "pages": [
+          "api-reference/processesv1/get-processesv1-listrunning",
+          "api-reference/processesv1/get-processesv1-liststopped",
+          "api-reference/processesv1/get-processesv1-info"
+        ]
+      },
+      {
+        "group": "ProcessesV2",
+        "pages": [
+          "api-reference/processesv2/get-processesv2-info",
+          "api-reference/processesv2/get-processesv2-listlatest",
+          "api-reference/processesv2/post-processesv2-stop"
+        ]
+      },
+      {
+        "group": "RoomV1",
+        "pages": [
+          "api-reference/roomv1/post-roomsv1-create",
+          "api-reference/roomv1/get-roomsv1-info",
+          "api-reference/roomv1/get-roomsv1-list-active",
+          "api-reference/roomv1/get-roomsv1-list-inactive",
+          "api-reference/roomv1/post-roomsv1-destroy",
+          "api-reference/roomv1/post-roomsv1-suspend",
+          "api-reference/roomv1/get-roomsv1-connectioninfo"
+        ]
+      },
+      {
+        "group": "RoomV2",
+        "pages": [
+          "api-reference/roomv2/post-roomsv2-create",
+          "api-reference/roomv2/get-roomsv2-info",
+          "api-reference/roomv2/get-roomsv2-list-active",
+          "api-reference/roomv2/get-roomsv2-list-inactive",
+          "api-reference/roomv2/post-roomsv2-destroy",
+          "api-reference/roomv2/post-roomsv2-suspend",
+          "api-reference/roomv2/get-roomsv2-connectioninfo",
+          "api-reference/roomv2/post-roomsv2-update"
+        ]
+      },
+      {
+        "group": "OrgTokensV1",
+        "pages": [
+          "api-reference/orgtokensv1/get-tokensv1orgs",
+          "api-reference/orgtokensv1/post-tokensv1orgs-create",
+          "api-reference/orgtokensv1/post-tokensv1orgs-tokens-revoke"
+        ]
+      }
+    ],
+    "footerSocials":
+      {
+          "twitter": "https://twitter.com/HathoraDev",
+          "linkedin": "https://www.linkedin.com/company/hathora/"
+      },
+      "redirects": []
+  }
